@@ -99,9 +99,8 @@ nav {
 }
 
 .router-link:hover {
-  width: 150px;
-  height: 100px;
-  transform: translateY(25px);
+  height: 60px;
+  width: 160px;
   transition: all 0.3s ease-in-out;
   background-color: #0cbcbc;
   color: #111;
