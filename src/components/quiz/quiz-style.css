@@ -1,0 +1,161 @@
+* {
+  user-select: none;
+}
+
+.quiz-page {
+  background-color: #222;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.question-box {
+  animation: upIn 1s ease-in-out;
+  background-color: #00ffff;
+}
+
+.question-box::before {
+  transition: all 1s ease-in-out;
+  transform: translateY(-500px);
+}
+
+.question-text {
+  margin-inline: 10px;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.answer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer-btn {
+  transition: all 0.5s ease-in-out;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  margin-inline: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 60px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.answer-btn:hover {
+  transition: all 0.5s ease-in-out;
+  background-color: #ddd;
+  color: #111;
+}
+
+.win {
+  background-color: green;
+}
+
+.lose {
+  background-color: red;
+}
+
+nav {
+  background-color: #ddd;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.router-link {
+  margin-inline: 5px;
+  width: 150px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #222;
+  color: #ddd;
+  font-size: 1.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+}
+
+.router-link:hover {
+  width: 150px;
+  height: 100px;
+  transform: translateY(25px);
+  transition: all 0.3s ease-in-out;
+  background-color: #0cbcbc;
+  color: #111;
+  border: solid 2px #00ffff;
+  box-shadow: 0px 0px 50px #00ffff;
+}
+
+.btn {
+  transition: 0.3s ease-in-out;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00ffff;
+  box-shadow: 0px 0px 70px #0cbcbc;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #111;
+}
+
+.router {
+  text-decoration: none;
+}
+
+.btn:hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 100px #00ffff;
+}
+
+.is-start {
+  background-color: #222;
+}
+
+.home-box {
+  background-color: #555;
+  padding: 15px;
+  text-align: center;
+}
+
+.hint-text {
+  padding: 10px;
+  background-color: #777;
+  text-align: start;
+  border-radius: 15px;
+}
+
+@keyframes upIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
