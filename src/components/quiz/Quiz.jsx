@@ -1,6 +1,6 @@
-const Quiz = ({ questionText, answers, onClick }) => {
+const Quiz = ({ questionText, answers, onClick, show }) => {
   return (
-    <div className="box question-box">
+    <div className={`box question-box${!show ? "-upper" : "-downer"}`}>
       <h3 className="question-text">{questionText}</h3>
       <div className="answer-box">
         {answers.map((answer, index) => (
